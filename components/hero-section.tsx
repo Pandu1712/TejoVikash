@@ -29,7 +29,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-cream via-yellow-50 to-orange-50">
+    <section className="mt-[-40] relative min-h-screen flex items-center pt-20 overflow-hidden bg-gradient-to-br from-cream via-yellow-50 to-orange-50">
       {/* Background decorations */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-32 h-32 bg-sunflower/20 rounded-full blur-3xl" />

@@ -36,9 +36,9 @@ export function Footer() {
           {/* Brand column */}
           <div className="space-y-6">
             <div className="flex items-center gap-3">
-              <Image src="/images/image.png" alt="TEJOVIKAS" width={50} height={50} className="object-contain" />
+              <Image src="/images/Logo1.png" alt="TEJOVIKAS" width={70} height={50} className="object-contain" />
               <Image
-                src="/images/image.png"
+                src="/images/Logo2.jpeg"
                 alt="GELS"
                 width={70}
                 height={50}
