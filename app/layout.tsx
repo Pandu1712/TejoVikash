@@ -13,46 +13,40 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "TEJOVIKAS & GELS - Inspiring Future | Premium Education Services",
   description:
-    "TEJOVIKAS & GELS offers premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp. Online and offline classes available. Inspiring future leaders through quality education.",
+    "TEJOVIKAS & GELS offers premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp. Online and offline classes available.",
   keywords:
-    "tuitions, abacus, vedic mathematics, summer camp, online classes, education, TEJOVIKAS, GELS, inspiring future",
+    "tuitions, abacus, vedic mathematics, summer camp, online classes, education, TEJOVIKAS, GELS",
   authors: [{ name: "TEJOVIKAS & GELS" }],
   creator: "TEJOVIKAS & GELS",
   publisher: "TEJOVIKAS & GELS",
+
+  icons: {
+    icon: "/Favicon1.png",
+    apple: "/Favicon1.png",
+  },
+
   openGraph: {
     title: "TEJOVIKAS & GELS - Inspiring Future",
-    description: "Premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp",
+    description:
+      "Premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp",
     type: "website",
     locale: "en_IN",
     siteName: "TEJOVIKAS & GELS",
   },
+
   twitter: {
     card: "summary_large_image",
     title: "TEJOVIKAS & GELS - Inspiring Future",
-    description: "Premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp",
+    description:
+      "Premium educational services including Tuitions, Abacus, Vedic Mathematics, and Summer Camp",
   },
+
   robots: {
     index: true,
     follow: true,
   },
-  icons: {
-    icon: [
-      {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/apple-icon.png",
-  },
-    generator: 'v0.app'
+
+  generator: "v0.app",
 }
 
 export const viewport: Viewport = {
@@ -65,9 +59,9 @@ export const viewport: Viewport = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en">
       <body className={`${poppins.className} font-sans antialiased`}>
